@@ -8,7 +8,7 @@ Simplify running pytest-bdd in docker/docker-compose.
 
 use it as base image
 
-    FROM docker-pytest-bdd
+    FROM frodeaa/docker-pytest-bdd
     COPY example /example
     WORKDIR /example
     CMD pytest
@@ -18,7 +18,7 @@ run with volume mount
     docker run \
       -v $(pwd)/example:/example \
       -w /example \
-      docker-pytest-bdd \
+      frodeaa/docker-pytest-bdd \
         pytest -vv --gherkin-terminal-reporter
 
 ## Installed Libraries
