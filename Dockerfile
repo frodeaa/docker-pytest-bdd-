@@ -1,6 +1,6 @@
 FROM python:3.6.2-alpine3.6
 
-ENV PYTEST_BDD_VERSION 2.19.0
+ENV PYTEST_BDD_VERSION 2.21.0
 
 RUN apk --no-cache --update add openssl libffi
 RUN apk --no-cache --update add --virtual build-dependencies build-base libffi-dev openssl-dev \
