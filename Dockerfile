@@ -1,4 +1,4 @@
-FROM python:3.6.2-alpine3.6
+FROM python:3.7.0-alpine3.8
 
 ENV PYTEST_BDD_VERSION 2.21.0
 
